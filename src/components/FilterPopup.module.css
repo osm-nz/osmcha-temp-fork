@@ -1,0 +1,11 @@
+.dialog {
+  width: 80%;
+  margin: 30px auto;
+  padding: 24px;
+  border-radius: 8px;
+  border: 1px solid #999a;
+}
+
+::backdrop {
+  background: #0009;
+}

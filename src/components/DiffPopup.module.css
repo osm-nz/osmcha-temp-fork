@@ -1,0 +1,61 @@
+/* eslint-disable css/use-baseline */
+.DiffPopup {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1;
+  background: white;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.DiffTable {
+  width: 100%;
+  border-collapse: collapse;
+
+  & tr:nth-of-type(odd) {
+    background: #f8f8f8;
+  }
+
+  & tr > td:first-child {
+    font-weight: 600;
+  }
+
+  & td {
+    text-align: left;
+  }
+
+  & td,
+  & th {
+    border: 1px solid #dadada;
+    padding: 2px;
+    color: #666;
+    font-size: small;
+    max-width: 200px;
+    overflow-x: auto;
+  }
+}
+
+:root {
+  /* same colours as OSMCha */
+  --added: #b7e8e0;
+  --removed: #e4b3bb;
+  --changedOld: #efdab0;
+  --changedNew: #f3f3c2;
+}
+
+.added {
+  background: var(--added);
+}
+.removed {
+  background: var(--removed);
+}
+.deleted {
+  background: var(--removed);
+}
+.changedOld {
+  background: var(--changedOld);
+}
+.changedNew {
+  background: var(--changedNew);
+}

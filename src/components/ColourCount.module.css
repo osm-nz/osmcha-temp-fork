@@ -1,0 +1,22 @@
+/* eslint-disable css/use-baseline */
+.ColourCount {
+  border-radius: 4px;
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden;
+  font-size: 12px;
+  margin: 1px;
+  & > span {
+    padding: 2px 3px;
+    display: inline-block;
+  }
+  & > span:nth-child(1) {
+    background-color: #39dbc0;
+  }
+  & > span:nth-child(2) {
+    background-color: #db950a;
+  }
+  & > span:nth-child(3) {
+    background-color: #cc2c47;
+  }
+}
